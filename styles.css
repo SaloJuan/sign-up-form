@@ -1,0 +1,49 @@
+.grid-container {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    height:700px;
+}
+
+.left-content{
+    background-image: url(./assets/rana-1000.jpg);
+    grid-column-start: 1;
+    grid-column-end:2;
+    height:700px;
+    
+
+}
+
+form *{
+    height:1px;
+}
+
+.right-content{
+    margin:20px;
+    grid-column-start: 2;
+    grid-column-end:4;
+    height:700px;
+}
+
+fieldset{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+
+    font-weight: 400;
+}
+
+input{
+    border: solid grey 1px;
+    border-radius: 6%;
+}
+
+input:focus{
+    border:rgb(65, 162, 252) solid;
+
+    outline: rgb(65, 162, 252);
+    
+}
+
+input:invalid{
+    border:rgb(255, 30, 30) solid;
+
+    outline: rgb(252, 47, 47);
+}
